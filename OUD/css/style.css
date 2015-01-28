@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+@import 'mobilemenu.css';
+
+/***** Mobile first *****/
+/* GENERAL */
+body {
+	width:100%;
+}
+
+
+/* MENU */
+.hoofdmenu{
+	position:fixed;
+	bottom:0;
+	border-top:medium #000000;
+	
+}
+.hoofdmenu ul li{
+	float:left;
+	list-style-type:none;
+	display:block;
+	padding:1%;
+}
+
+.hoofdmenu ul li a{
+	text-decoration:none;
+	display:inline-block;
+}
+
+

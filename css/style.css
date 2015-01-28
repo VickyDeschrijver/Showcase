@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+body {
+	width:100%;
+	font-size:18px;
+}
+
+.container {
+	width:100%;
+}
+
+#sitenaam {
+	text-align:center;
+	font-family: 'Indie Flower', cursive;
+	text-shadow: 2px 2px #bbb;	
+}
+
+
+.jumbotron {
+	margin-top:150px;	
+}
+h1 {
+	padding: 0 3%;
+}
+p {
+	padding: 2% 5% ;
+}
+#jobprofiel li {
+	list-style-type:circle;
+	margin-left:8%;
+}
+
+#contacticon {
+	width:25px;
+	height:25px;
+	display:block;
+}
+
+
+
+/*clearfix */
+.clearfix:before, .clearfix:after {
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+/*enkel voor IE6/7 */
+.clearfix {*zoom: 1;}
+
+
