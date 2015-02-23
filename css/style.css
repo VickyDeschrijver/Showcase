@@ -8,15 +8,22 @@ body {
 }
 
 .container {
-	width:100%;
+	width:62.5%;
 }
 
 #sitenaam {
-	text-align:center;
+	font-size:0.75em;
 	font-family: 'Indie Flower', cursive;
 	text-shadow: 2px 2px #bbb;	
+
 }
 
+@media (min-width: 235px) {
+	#sitenaam {
+	font-size:1.25em;
+	font-family: 'Indie Flower', cursive;
+	text-shadow: 2px 2px #bbb;}
+}
 
 .jumbotron {
 	margin-top:150px;	
@@ -36,6 +43,125 @@ p {
 	width:25px;
 	height:25px;
 	display:block;
+}
+
+
+/*** achtergrond ***/
+.bg {
+	position: relative;
+	height: 350px;
+	width: 100%;
+	box-sizing: border-box;
+	transform-style: inherit;	
+
+}
+
+#pic1 {
+  background: url('../img/zee3.jpg') no-repeat ;
+  background-attachment: fixed;
+
+  	 background-size: 690px 350px;
+}
+#pic2 {
+  background: url('../img/hart3.jpg') no-repeat ;
+  background-attachment: fixed;
+  height:350px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+  margin-top:2em;
+  padding-bottom:0;
+}
+
+@media (min-width: 680px) {
+.bg {
+	position: relative;
+	height: 600px;
+	width: 100%;
+	box-sizing: border-box;
+	transform-style: inherit;	
+}
+
+#pic1 {
+  background: url('../img/zee2.jpg') no-repeat ;
+  background-attachment: fixed;
+  height:600px;
+}
+#pic2 {
+  background: url('../img/hart2.jpg') no-repeat ;
+  background-attachment: fixed;
+  height:600px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+  margin-top:2em;
+  padding-bottom:0;
+}}
+
+@media (min-width: 1200px) {
+.bg {
+	position: relative;
+	height: 750px;
+	width: 100%;
+	box-sizing: border-box;
+	transform-style: inherit;	
+}
+
+#pic1 {
+  background: url('../img/zee1.jpg') no-repeat center center ;
+  background-attachment: fixed;
+  height:750px;
+}
+#pic2 {
+  background: url('../img/hart1.jpg') no-repeat center center ;
+  background-attachment: fixed;
+  height:750px;
+}
+
+.jumbotron {
+	text-align:center;
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+  margin-top:2em;
+  padding-bottom:0;
+}
+}
+
+
+/*** Sidebar ***/
+.sidebar {
+	width:1.25em;
+	height:6.9em;
+	background-color:#707070;
+	position:fixed;
+	top:13em;
+	right:0;
+	float:right;
+	z-index:1;
+}
+
+.sidebar ul {
+	padding-right:0;
+	float:right;
+}
+
+.sidebar ul li {
+	list-style-type:none;
+}
+
+.sidebar ul li a {
+	color:#BEBEBE;
+	text-decoration:none;
 }
 
 

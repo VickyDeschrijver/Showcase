@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/hoofdmenu.css"/>
+
 <link rel="stylesheet" href="dist/css/bootstrap.css"/>
-<link rel="stylesheet" href="dist/js/bootstrap.js"/>
+
 <link rel="stylesheet" href="css/normalize.css"/>
 <link href="css/MaterialDesign-Webfont-master/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
 <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-
+<link rel="stylesheet" href="css/hoofdmenu.css"/>
+<link rel="stylesheet" href="css/style.css"/>
 
 <title>It's All in the Vix.!!</title>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 
 <script> 
 $(function() {
@@ -33,6 +33,9 @@ $(function() {
 	});
 	
 });
+
+
+
 function toggleNav() {
 	if ($('.wrapper').hasClass('show-menu')) {
 		$('.wrapper').removeClass('show-menu');
@@ -53,43 +56,58 @@ function toggleNav() {
 
 <body>
 
-<div class="container">
-  <div class="row">
-    <nav class="col-sm-12">
-      <div class="navToggle">
+
+<div class="row">
+<nav class="col-sm-12">
+    <div class="navToggle">
         <div class="icon-left"></div>
         <div class="icon-right"></div>
-      </div>
-      <h2 id="sitenaam">It's All in the Vix.</h2>
-      <ul>
-        <li><a href="#" class="active"> <i class="mdi mdi-home"> </i> Home</a></li>
-        <li><a href="#about"> <i class="mdi mdi-account"> </i> About Me</a></li>
-        <li><a href="#cv"> <i class="mdi mdi-format-align-justify"> </i>CV</a></li>
-        <li><a href="#portfolio"> <i class="mdi mdi-auto-fix"> </i> Portfolio</a></li>
-        <li><a href="#"> <i class="mdi mdi-phone-in-talk"> </i> Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+    </div>				
+  <h2 id="sitenaam">It's All in the Vix.</h2>
+  <ul>
+    <li><a href="#" class="active"> <i class="mdi mdi-home"> </i> Home</a></li>
+    <li><a href="#about"> <i class="mdi mdi-account"> </i> About Me</a></li>
+    <li><a href="#cv"> <i class="mdi mdi-format-align-justify"> </i> Curriculum Vitae</a></li>
+    <li><a href="#portfolio"> <i class="mdi mdi-auto-fix"> </i> Portfolio</a></li>
+    <li><a href="#"> <i class="mdi mdi-phone-in-talk"> </i> Contact</a></li>
+  </ul>
+</nav>
 </div>
 
 
+<aside class="sidebar">
+	<ul>
+        <li><a href="#" class="active"> <i class="mdi mdi-home"> </i> </a></li>
+        <li><a href="#about"> <i class="mdi mdi-account"> </i> </a></li>
+        <li><a href="#cv"> <i class="mdi mdi-format-align-justify"> </i> </a></li>
+        <li><a href="#portfolio"> <i class="mdi mdi-auto-fix"> </i> </a></li>
+        <li><a href="#"> <i class="mdi mdi-phone-in-talk"> </i> </a></li>
+     </ul>
+</aside>
 
-<article id="about">
-<h1 class="jumbotron"> About Me </h1>
-<p> Welkom op mijn webpage! </p>
-<p> Deze is momenteel 'a work in progress' waar ik al mijn nieuwe kennis op uittest. Op dit moment blijft dit nog beperkt tot HTML en CSS. Binnenkort kan u ook mijn andere vaardigheden als Front-End ontwikkelaar hier bekijken. </p>
-<p> Na een zoektocht met verschillende werkervaringen, ben ik terecht gekomen op een passie die ik al sinds jaren in mij heb. Als Front-end ontwikkelaar zie ik de mogelijkheid om zowel creatief, logisch, sociaal en opbouwend aan de slag te gaan. Vanuit vorige werk- en studie-ervaringen neem ik al goede bagage mee zoals:
-	<ul id="jobprofiel"> 
-    	<li> Zowel zelfstandig als in team te kunnen werken </li>
-        <li> Planmatig tot resultaten te komen </li>
-        <li> De zin om continu bij te leren en nieuwe uitdagingen aan te gaan </li>
-    </ul> </p>
 
-<p> Wanneer u verder kijkt, krijgt u een overzicht van mijn kennis in mijn CV. Daaronder kan u zien welke projecten ik reeds uitwerkte en tenslotte kan u mij natuurlijk altijd contacteren </p>
+
+<article id="about" >
+
+	<div class="bg" id="pic1"> 
+		<h1 class="jumbotron"> About Me </h1>
+    </div>
+    <p> Welkom op mijn webpage! </p>
+    <p> Deze is momenteel 'a work in progress' waar ik al mijn nieuwe kennis op uittest. Op dit moment blijft dit nog beperkt tot HTML en CSS. Binnenkort kan u ook mijn andere vaardigheden als Front-End ontwikkelaar hier bekijken. </p>
+    <p> Na een zoektocht met verschillende werkervaringen, ben ik terecht gekomen op een passie die ik al sinds jaren in mij heb. Als Front-end ontwikkelaar zie ik de mogelijkheid om zowel creatief, logisch, sociaal en opbouwend aan de slag te gaan. Vanuit vorige werk- en studie-ervaringen neem ik al goede bagage mee zoals:
+        <ul id="jobprofiel"> 
+            <li> Zowel zelfstandig als in team te kunnen werken </li>
+            <li> Planmatig tot resultaten te komen </li>
+            <li> De zin om continu bij te leren en nieuwe uitdagingen aan te gaan </li>
+        </ul> </p>
+    
+    <p> Wanneer u verder kijkt, krijgt u een overzicht van mijn kennis in mijn CV. Daaronder kan u zien welke projecten ik reeds uitwerkte en tenslotte kan u mij natuurlijk altijd contacteren </p>
 </article>
 
 <article id="cv">
-<h1 class="jumbotron"> CV </h1>
+	<div class="bg" id="pic2"> 
+		<h1 class="jumbotron"> CV </h1>
+    </div>
 een mooi overzicht van mijn cv
 </article>
 
