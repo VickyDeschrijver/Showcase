@@ -1,7 +1,6 @@
 /* MENU */
 body {
   background-color: #efefef;
-  font-family: 'Roboto', sans-serif;
   color: rgba(0, 0, 0, 0.87);
   position: relative;
   padding: 0;
@@ -9,12 +8,13 @@ body {
 
 nav {
   width: 100%;
-  max-height: 100px;
+  max-height: 50px;
   background-color: white;
   transition-duration: 0.5s;
   transition-timing-function: swing;
   position: relative;
   overflow: hidden;
+  z-index:4;
   /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);*/}
   nav.open {
     max-height: 700px;
@@ -23,7 +23,7 @@ nav {
     transition: 0.5s;
     position: absolute;
     font-size: 1em;
-    top: 15px;
+    top: 10px;
     left: 32px;
     font-weight: 300; }
     nav h2 b {
@@ -31,7 +31,7 @@ nav {
     @media (max-width: 768px) {
       nav h2 {
         font-size: 1.5em;
-        top: 16px; }
+        top: 10px; }
         nav h2 span {
           display: none; } }
   nav ul {
@@ -72,78 +72,6 @@ nav {
   .navToggle .icon-left {
     transition-duration: 0.5s;
     position: absolute;
-    height: 4px;
-    top: 25px;
-    width: 15px;
-    background-color: rgba(0, 0, 0, 0.87); }
-    .navToggle .icon-left:before {
-      transition-duration: 0.5s;
-      position: absolute;
-      width: 15px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.87);
-      content: "";
-      top: -10px; }
-    .navToggle .icon-left:after {
-      transition-duration: 0.5s;
-      position: absolute;
-      width: 15px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.87);
-      content: "";
-      top: 10px; }
-  .navToggle .icon-right {
-    transition-duration: 0.5s;
-    position: absolute;
-    height: 4px;
-    top: 25px;
-    width: 15px;
-    background-color: rgba(0, 0, 0, 0.87);
-    left: 15px; }
-    .navToggle .icon-right:before {
-      transition-duration: 0.5s;
-      position: absolute;
-      width: 15px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.87);
-      content: "";
-      top: -10px; }
-    .navToggle .icon-right:after {
-      transition-duration: 0.5s;
-      position: absolute;
-      width: 15px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.87);
-      content: "";
-      top: 10px; }
-  .navToggle.open .icon-left {
-    transition-duration: 0.5s;
-    background: transparent; }
-    .navToggle.open .icon-left:before {
-      transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px); }
-    .navToggle.open .icon-left:after {
-      transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px); }
-  .navToggle.open .icon-right {
-    transition-duration: 0.5s;
-    background: transparent; }
-    .navToggle.open .icon-right:before {
-      transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px); }
-    .navToggle.open .icon-right:after {
-      transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px); }
-@media (max-width: 460px) {
-	.navToggle {
-  position: absolute;
-  width: 15px;
-  height: 30px;
-  top:30px;
-  right: 16px;
-  transition-duration: 0.5s;
-   }
-  .navToggle:hover {
-    cursor: pointer; }
-  .navToggle .icon-left {
-    transition-duration: 0.5s;
-    position: absolute;
     height: 2px;
     top: 12.5px;
     width: 7.5px;
@@ -151,7 +79,7 @@ nav {
     .navToggle .icon-left:before {
       transition-duration: 0.5s;
       position: absolute;
-      width: 7.5px;
+      width: 12.5px;
       height: 2px;
       background-color: rgba(0, 0, 0, 0.87);
       content: "";
@@ -202,6 +130,15 @@ nav {
       transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px); }
     .navToggle.open .icon-right:after {
       transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px); }
+@media (max-width: 460px) {
+	.navToggle {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  top:30px;
+  right: 16px;
+  transition-duration: 0.5s;
+   }
 }
 .x {
   padding: 0;
