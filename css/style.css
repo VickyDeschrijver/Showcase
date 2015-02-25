@@ -11,9 +11,7 @@ body {
     padding: 0;
 }
 
-.container {
-	width:80%;
-}
+
 
 #sitenaam {
 	font-size:0.75em;
@@ -43,7 +41,7 @@ strong {
 	padding: 0 3%;
 }*/
 p {
-	padding: 2% 5% ;
+	padding:0 6em;
 }
 #jobprofiel li {
 	list-style-type:circle;
@@ -57,6 +55,8 @@ p {
 }
 
 
+
+
 /*** achtergrond ***/
 .slide1, .slide2 .slide3 .slide4{ width: 100%; }
 .slide1{
@@ -68,13 +68,13 @@ p {
     background-size: cover;
 }
  
-.slide2{
+.slide2, .slide4, .slide6{
     background-color: #fff;
     color: #333333;
     height: auto;
-    margin: 0 auto;
+	width: 100%;
     overflow: hidden;
-    padding: 50px 0;
+    padding: 3.125em 6em;
 }
  
 .slide3{
@@ -84,14 +84,7 @@ p {
     padding: 170px 0 0 0;
     background-size: cover;
 }
- 
-.slide4{
-    background-color: #fff;
-    color: #333333;
-    height: auto;
-    padding: 50px 0;
-}
- 
+
 .slide5{
     background: url('../img/hart3.jpg') 50% 0 no-repeat fixed;
     height: 300px;
@@ -101,14 +94,6 @@ p {
     background-size: cover;
 }
 
-.slide6{
-    background-color: #fff;
-    color: #333333;
-    height: auto;
-    padding: 50px 0;
-}
-
-
 .jumbotron {
 	font-size: 45px;
 	margin-bottom: 0px;
@@ -116,29 +101,29 @@ p {
 	text-shadow: black 0.3em 0.3em 0.3em;
 	background:transparent;
 	margin-top:2em;
-	padding-bottom:0;
+	padding:0;
 }
 
 
 @media (min-width: 1200px) {
-.slide1, .slide2{ width: 100%; }
+
 .slide1{
     background:url('../img/antwerp.jpg') 50% 0 no-repeat fixed;
     color: #fff;
     height:350px;
-
     margin: 0 auto;
     padding: 200px 0 260px 0;
     background-size: cover;
 }
  
-.slide2{
+.slide2, .slide4, .slide6{
     background-color: #fff;
     color: #333333;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-    padding: 50px 0;
+    padding: 3.125em 6em;
+	width:100%;
 }
  
 .slide3{
@@ -148,36 +133,21 @@ p {
 	margin: 0 auto;
     padding: 170px 0 0 0;
     background-size: cover;
-	max-width:75%;
+	
 }
  
-.slide4{
-    background-color: #fff;
-    color: #333333;
-    height: auto;
-    padding: 50px 0;
-	max-width:75%;
-    margin: 0 auto;
-}
+
  
 .slide5{
     background: url('../img/hart3.jpg') 50% 0 no-repeat fixed;
     height: 200px;
-	max-width:75%;
     margin: 0 auto;
     padding: 250px 0;
     color: #fff;
     background-size: cover;
 }
 
-.slide6{
-    background-color: #fff;
-    color: #333333;
-    height: auto;
-    padding: 50px 0;
-	max-width:75%;
-	margin: 0 auto;	
-}}
+}
 
 
 /*** Sidebar ***/
