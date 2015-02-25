@@ -47,7 +47,30 @@ function toggleNav() {
 		console.log ('menu wordt geopend')
 	}
 }
+</script>
 
+<script>
+$(document).ready(function(){
+   // cache the window object
+   $window = $(window);
+ 
+   $('section[data-type="background"]').each(function(){
+     // declare the variable to affect the defined data-type
+     var $scroll = $(this);
+                     
+      $(window).scroll(function() {
+        // HTML5 proves useful for helping with creating JS functions!
+        // also, negative value because we're scrolling upwards                             
+        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
+         
+        // background position
+        var coords = '50% '+ yPos + 'px';
+ 
+        // move the background
+        $scroll.css({ backgroundPosition: coords });    
+      }); // end window scroll
+   });  // end section function
+}); // close out script
 
 </script>
 
@@ -89,7 +112,7 @@ function toggleNav() {
 <article  id="about" >
 
 	<div class="slide1">
-		<h1 class="jumbotron"> About Me </h1>
+		<h1 class="jumbotron" data-speed="6" data-type="background"> About Me </h1>
     </div>
 
 	<div class="slide2 container">
@@ -108,7 +131,7 @@ function toggleNav() {
 
 <article  class="cv">
 	<div class="slide3">
-		<h1 class="jumbotron"> Curriculum Vitae </h1> 
+		<h1 class="jumbotron" data-speed="4" data-type="background"> Curriculum Vitae </h1> 
     </div>
     
     <div class="slide4 container">
@@ -158,7 +181,7 @@ function toggleNav() {
 
 <article  id="portfolio">
     <div class="slide5">
-    	<h1 class="jumbotron"> Portfolio </h1> 
+    	<h1 class="jumbotron" data-speed="6" data-type="background"> Portfolio </h1> 
     </div>
     
     <div class="slide6 container">
@@ -195,6 +218,7 @@ function toggleNav() {
 
 
 </div>
+
 
 
 </body>

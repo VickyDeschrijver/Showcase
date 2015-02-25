@@ -36,6 +36,13 @@ strong {
 
 }}
 
+@media (min-width: 1200px) {
+	#sitenaam {
+	font-size:2em;
+	font-family: 'Indie Flower', cursive;
+
+}}
+
 
 /* h1 {
 	padding: 0 3%;
@@ -107,6 +114,9 @@ p {
 
 @media (min-width: 1200px) {
 
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6 {
+	width: 80%;
+}
 .slide1{
     background:url('../img/antwerp.jpg') 50% 0 no-repeat fixed;
     color: #fff;
@@ -123,7 +133,6 @@ p {
     margin: 0 auto;
     overflow: hidden;
     padding: 3.125em 6em;
-	width:100%;
 }
  
 .slide3{
@@ -157,7 +166,7 @@ p {
 	background:#7f7f7f;
 	background:rgba(0,0,0,0.5);
 	position:fixed;
-	top:13em;
+	top:11em;
 	right:0;
 	float:right;
 	z-index:1;
@@ -196,7 +205,7 @@ p {
 	padding:1.5px;
 	}
 .contact ul li {
-	float:right;}
+}
 .contact ul li a {}
 
 
