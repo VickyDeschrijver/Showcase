@@ -1,64 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
 
+/**** mobile first ****/
 /* GENERAL */
 
 body {
 	width:100%;
-	font-size:12px;
+	font-size:16px;
 	font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	margin: 0;
     padding: 0;
 }
 
-
-
 #sitenaam {
-	font-size:0.75em;
-	font-family: 'Indie Flower', cursive;
-}
-
+	font-size:1.25em;
+	font-family: 'Indie Flower', cursive;}
 em {
 	font-style:normal;
 	font-weight:200;
-	font-variant:small-caps;
-}
+	font-variant:small-caps;}
 strong {
 	font-size:1.125em;
 	font-weight:600;
-	font-variant:small-caps;
-}
-
-@media (min-width: 235px) {
-	#sitenaam {
-	font-size:1.25em;
-	font-family: 'Indie Flower', cursive;
-
-}}
-
-@media (min-width: 1200px) {
-	#sitenaam {
-	font-size:2em;
-	font-family: 'Indie Flower', cursive;
-
-}}
-
-
-/* h1 {
-	padding: 0 3%;
-}*/
-p {
-	padding:0 6em;
-}
+	font-variant:small-caps;}
+	
 #jobprofiel li {
 	list-style-type:circle;
 	margin-left:8%;
-}
-
-#contacticon {
-	width:25px;
-	height:25px;
-	display:block;
 }
 
 
@@ -67,11 +35,12 @@ p {
 /*** achtergrond ***/
 .slide1, .slide2 .slide3 .slide4{ width: 100%; }
 .slide1{
-    background:url('../img/antwerp.jpg') 50% 0 no-repeat fixed;
+    background:url('../img/zee2.jpg') 50% 0 no-repeat fixed;
+	background-color:#fff;
     color: #fff;
     height: 300px;
     margin: 0;
-    padding: 200px 0 260px 0;
+    padding: 100px 0 260px 0;
     background-size: cover;
 }
  
@@ -81,83 +50,39 @@ p {
     height: auto;
 	width: 100%;
     overflow: hidden;
-    padding: 3.125em 6em;
+    padding: 3.125em 1.25em 3.125em 2.3em;
 }
+
  
 .slide3{
-    background: url('../img/zee.jpg') 50% 0 no-repeat fixed;
+    background: url('../img/antwerp.jpg') 50% 0 no-repeat fixed;
+	background-color:#fff;
     color: #fff;
     height: 300px;
-    padding: 170px 0 0 0;
+    padding: 100px 0 260px 0;
     background-size: cover;
 }
 
 .slide5{
     background: url('../img/hart3.jpg') 50% 0 no-repeat fixed;
+	background-color:#fff;
     height: 300px;
     margin: 0 auto;
-    padding: 250px 0;
+    padding: 50px 0 260px 0;
     color: #fff;
     background-size: cover;
 }
 
 .jumbotron {
-	font-size: 45px;
-	margin-bottom: 0px;
+	font-family: 'Kranky', cursive;
+	font-size: 2.5em;
 	color: white;
 	text-shadow: black 0.3em 0.3em 0.3em;
 	background:transparent;
-	margin-top:2em;
-	padding:0;
+	padding:0 0.5em 0 0.9em;
+	margin:100px auto;
+	text-align:center;
 }
-
-
-@media (min-width: 1200px) {
-
-.slide1, .slide2, .slide3, .slide4, .slide5, .slide6 {
-	width: 80%;
-}
-.slide1{
-    background:url('../img/antwerp.jpg') 50% 0 no-repeat fixed;
-    color: #fff;
-    height:350px;
-    margin: 0 auto;
-    padding: 200px 0 260px 0;
-    background-size: cover;
-}
- 
-.slide2, .slide4, .slide6{
-    background-color: #fff;
-    color: #333333;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 3.125em 6em;
-}
- 
-.slide3{
-    background: url('../img/zee.jpg') 50% 0 no-repeat fixed;
-    color: #fff;
-    height: 600px;
-	margin: 0 auto;
-    padding: 170px 0 0 0;
-    background-size: cover;
-	
-}
- 
-
- 
-.slide5{
-    background: url('../img/hart3.jpg') 50% 0 no-repeat fixed;
-    height: 200px;
-    margin: 0 auto;
-    padding: 250px 0;
-    color: #fff;
-    background-size: cover;
-}
-
-}
-
 
 /*** Sidebar ***/
 .sidebar {
@@ -168,36 +93,54 @@ p {
 	position:fixed;
 	top:11em;
 	right:0;
-	float:right;
+	float:left;
 	z-index:1;
-	
 }
 
 .sidebar ul {
-	padding-right:0;
+	padding-right:0.250em;
 	float:right;
+	display:block;
 }
 
 .sidebar ul li {
 	list-style-type:none;
+	display:inline-block;
+	padding-right:0.125em;
 }
 
 .sidebar ul li a {
 	color:#BEBEBE;
 	text-decoration:none;
+	display:inline-block;
 }
 
 
 /***** contact *****/
+#contacticon {
+	width:1.6em;
+	height:1.6em;
+	padding:0.125em;
+	display:inline-block;
+	float:left;}
+
+footer { width:100%;}
+footer div p {
+	display:inline-block;
+	float:right;
+}
+footer div p:last-child{
+	float:left;}
+
 .contact {
-	width:2.3em;
-	height:13em;
+	width:2.2em;
+	height:10em;
 	background:#7f7f7f;
 	background:rgba(0,0,0,0.5);
 	position:fixed;
-	bottom:3em;
-	right:0;
-	float:right;
+	top:11em;
+	left:0;
+	float:left;
 	z-index:1;
 }
 .contact ul {
@@ -205,15 +148,34 @@ p {
 	padding:1.5px;
 	}
 .contact ul li {
+	display:block;
+	float:left;
 }
 .contact ul li a {}
 
-
+.printZiet {display:none;}
 
 /*** footer ***/
 footer {
 	display:inline-block;
 	float:left;
+}
+
+/*** Tooltips ***/
+.tooltip-inner {
+	background-color:rgba(122,122,122,0.68);
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+
+/*** PrintKnop ***/
+.printKnop {
+	display:none;
+}
+
+.btn-default {
+  color: #fff;
+  	background:rgba(0,0,0,0.5);
 }
 
 
@@ -227,5 +189,125 @@ footer {
 }
 /*enkel voor IE6/7 */
 .clearfix {*zoom: 1;}
+
+@media (min-width: 821px) {
+.printKnop {
+	display:block;
+	float:right;
+	font-family: inherit;
+}
+	
+/*** achtergrond ***/
+.slide2, .slide4, .slide6{
+    background-color: #fff;
+    color: #333333;
+    height: auto;
+	width: 100%;
+    overflow: hidden;
+    padding: 3.125em 1.56em 3.125em 2.75em;
+}
+.slide1, .slide3, .slide5{
+    height: 450px;
+}
+
+.jumbotron {
+	padding-top:1em;
+}
+
+
+/*** Sidebar ***/
+.sidebar {
+	width:1.56em;
+	height:8.625em;
+	background:#7f7f7f;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:11em;
+	right:0;
+	float:right;
+	z-index:1;
+}
+
+.sidebar ul {
+	padding-right:0;
+	float:right;
+}
+
+.sidebar ul li {
+	list-style-type:none;
+	
+}
+
+.sidebar ul li a {
+	color:#BEBEBE;
+	text-decoration:none;
+	font-size:1.25em;
+	display:inline-block;
+}
+
+
+/***** contact *****/
+#contacticon {
+	width:2em;
+	height:2em;
+	padding:0.156em;
+	display:inline-block;
+	float:left;}
+
+footer { width:100%;}
+footer div p {
+	display:inline-block;
+	float:right;
+}
+footer div p:last-child{
+	float:left;}
+
+.contact {
+	width:2.6em;
+	height:12.5em;
+	background:#7f7f7f;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:11em;
+	left:0;
+	float:left;
+	z-index:1;
+}
+.contact ul {
+	list-style-type:none;
+	padding:1.5px;
+	}
+.contact ul li {
+	display:block;
+	float:left;
+}
+.contact ul li a {}
+}
+
+@media (min-width: 1200px) {
+.slide2, .slide4, .slide6{
+    padding: 3.125em 10%;
+	max-width:80%;
+	margin:0 auto;
+}
+.slide1, .slide3, .slide5{
+    height: 500px;
+	max-width:80%;
+	margin:0 auto;
+}	
+
+footer {
+	max-width:80%;
+	margin:0 auto;
+	padding:0 10%;
+}
+
+}
+
+
+
+
+
+
 
 

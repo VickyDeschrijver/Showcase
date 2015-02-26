@@ -7,35 +7,44 @@
  <link rel="shortcut icon" type="image/icon" href="img/favicon.ico" />
 <link rel="stylesheet" href="dist/css/bootstrap.css"/>
 
-<link rel="stylesheet" href="css/normalize.css"/>
-<link href="css/MaterialDesign-Webfont-master/materialdesignicons.css" media="all" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/hoofdmenu.css"/>
-<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/normalize.css" media="screen"/>
+<link href="css/MaterialDesign-Webfont-master/materialdesignicons.css" media="screen" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' media="screen">
+<link href='http://fonts.googleapis.com/css?family=Kranky' rel='stylesheet' type='text/css' media="screen">
+<link rel="stylesheet" href="css/hoofdmenu.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print"/>
+
+
+
+
 
 <title> It's All in the Vix.!!</title>
 
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/init.js"></script>
 
 <script> 
 $(function() {
-	$('#toggle').on("click",function(){
+	/*$('#toggle').on("click",function(){
 		$('#ikoon').toggleClass('menu-active');
 		toggleNav();
 	});
 	$('.container .content').on("click", function() {
 		toggleNav();
-	});
+	});*/
 	$(".navToggle").click (function(){
 	  $(this).toggleClass("open");
 	  $("nav").toggleClass("open");
 	});
+	  $('[data-toggle="tooltip"]').tooltip()
 	
 });
 
 
 
-function toggleNav() {
+/*function toggleNav() {
 	if ($('.wrapper').hasClass('show-menu')) {
 		$('.wrapper').removeClass('show-menu');
 		$('#ikoon').removeClass('menu-active');
@@ -46,39 +55,14 @@ function toggleNav() {
 		$('#ikoon').addClass('menu-active');
 		console.log ('menu wordt geopend')
 	}
-}
-</script>
-
-<script>
-$(document).ready(function(){
-   // cache the window object
-   $window = $(window);
- 
-   $('section[data-type="background"]').each(function(){
-     // declare the variable to affect the defined data-type
-     var $scroll = $(this);
-                     
-      $(window).scroll(function() {
-        // HTML5 proves useful for helping with creating JS functions!
-        // also, negative value because we're scrolling upwards                             
-        var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-         
-        // background position
-        var coords = '50% '+ yPos + 'px';
- 
-        // move the background
-        $scroll.css({ backgroundPosition: coords });    
-      }); // end window scroll
-   });  // end section function
-}); // close out script
-
+} */
 </script>
 
 </head>
 
 <body>
 
-
+<div class="scrollMenu"> 
 <div class="row">
 <nav class="col-sm-12">
     <div class="navToggle">
@@ -91,32 +75,47 @@ $(document).ready(function(){
     <li><a href="#about"> <i class="mdi mdi-account"> </i> About Me</a></li>
     <li><a href="#cv"> <i class="mdi mdi-format-align-justify"> </i> Curriculum Vitae</a></li>
     <li><a href="#portfolio"> <i class="mdi mdi-auto-fix"> </i> Portfolio</a></li>
-    <li><a href="#"> <i class="mdi mdi-phone-in-talk"> </i> Contact</a></li>
+    <li><a href="#footer"> <i class="mdi mdi-phone-in-talk"> </i> Contact</a></li>
   </ul>
 </nav>
+</div> </div>
+
+<div class="scrollMenu">
+<div class="menu">
+  <h2 id="sitenaam">It's All in the Vix.</h2>
+  <ul>
+    <li><a href="#" class="active"> <i class="mdi mdi-home"> </i> Home</a></li>
+    <li><a href="#about"> <i class="mdi mdi-account"> </i> About Me</a></li>
+    <li><a href="#cv"> <i class="mdi mdi-format-align-justify"> </i> Curriculum Vitae</a></li>
+    <li><a href="#portfolio"> <i class="mdi mdi-auto-fix"> </i> Portfolio</a></li>
+    <li><a href="#footer"> <i class="mdi mdi-phone-in-talk"> </i> Contact</a></li>
+  </ul>
+
+</div>
 </div>
 
-
-<aside class="sidebar">
+<!--<aside class="sidebar">
 	<ul>
-        <li><a href="#" class="active"> <i class="mdi mdi-home"> </i> </a></li>
-        <li><a href="#about"> <i class="mdi mdi-account"> </i> </a></li>
-        <li><a href="#cv"> <i class="mdi mdi-format-align-justify"> </i> </a></li>
-        <li><a href="#portfolio"> <i class="mdi mdi-auto-fix"> </i> </a></li>
-        <li><a href="#"> <i class="mdi mdi-phone-in-talk"> </i> </a></li>
+        <li><a href="#"  data-toggle="tooltip" data-placement="left" title="Home">  <i class="mdi mdi-home"> </i> </a></li>
+        <li><a href="#about" data-toggle="tooltip" data-placement="left" title="About Me">  <i class="mdi mdi-account"> </i> </a></li>
+        <li><a href="#cv"  data-toggle="tooltip" data-placement="left" title="Curriculum Vitae"> <i class="mdi mdi-format-align-justify" > </i> </a></li>
+        <li><a href="#portfolio" data-toggle="tooltip" data-placement="left" title="Portfolio"> <i class="mdi mdi-auto-fix" > </i> </a></li>
+        <li><a href="#footer"  data-toggle="tooltip" data-placement="left" title="Contact (look to the left of this page)"> <i class="mdi mdi-phone-in-talk"> </i> </a></li>
      </ul>
-</aside>
+</aside>-->
 
 
 
 <article  id="about" >
 
-	<div class="slide1">
-		<h1 class="jumbotron" data-speed="6" data-type="background"> About Me </h1>
-    </div>
+	<section class="slide1" data-speed="6" data-type="background">
+		<div class="jumbotron" > About Me </div>
+    </section>
 
-	<div class="slide2 container">
+	<div class="slide2">
+    <div class="printKnop"> <input class="btn btn-default" type="button"  onClick="window.print()"  value="Print this Page!"/> </div>
     <p> Welkom op mijn webpage! </p>
+    
     <p> Deze is momenteel <em> 'a work in progress' </em> waar ik al mijn nieuwe kennis op uittest. Op dit moment blijft dit nog beperkt tot HTML en CSS. Binnenkort kan u ook mijn andere vaardigheden als Front-End ontwikkelaar hier bekijken. </p>
     <p> Na een zoektocht met verschillende werkervaringen, ben ik terecht gekomen op een passie die ik al sinds jaren in mij heb. Als <strong> Front-end ontwikkelaar </strong> zie ik de mogelijkheid om zowel creatief, logisch, sociaal en opbouwend aan de slag te gaan. Vanuit vorige werk- en studie-ervaringen neem ik al goede bagage mee zoals:
         <ul id="jobprofiel"> 
@@ -129,12 +128,13 @@ $(document).ready(function(){
     </div>
 </article>
 
-<article  class="cv">
-	<div class="slide3">
-		<h1 class="jumbotron" data-speed="4" data-type="background"> Curriculum Vitae </h1> 
-    </div>
+<article  class="cv" id="cv">
+	<section class="slide3" data-speed="12" data-type="background">
+		<div class="jumbotron"> Curriculum Vitae 
+        <p class="printZiet"> Vicky Deschrijver - deschrijvervicky@hotmail.com </p></div> 
+    </section>
     
-    <div class="slide4 container">
+    <div class="slide4">
     <h3> Opleiding </h3>
     <div> <strong> Front End Ontwikkelaar </strong>	VDAB Oostende	2014 – 2015
     <ul> 
@@ -180,11 +180,11 @@ $(document).ready(function(){
 </article>
 
 <article  id="portfolio">
-    <div class="slide5">
-    	<h1 class="jumbotron" data-speed="6" data-type="background"> Portfolio </h1> 
-    </div>
+    <section class="slide5" data-speed="20" data-type="background">
+    	<div class="jumbotron" > Portfolio </div> 
+    </section>
     
-    <div class="slide6 container">
+    <div class="slide6">
     Ik maakte reeds enkele dingen!!	
     </div>
     
@@ -192,32 +192,39 @@ $(document).ready(function(){
 </article>
 
 
-<aside>
-<div class="contact" id="contact">
+
+<aside class="contact" id="contact">
+<div class="jumbotron printZiet" > Contact </div> 
 	<ul> 
-		<li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" data-toggle="tooltip" data-placement="left" title="deschrijvervicky@hotmail.com" > </a></li>
-        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn"> </a> 
+		<li> <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" data-toggle="tooltip" data-placement="right" title="deschrijvervicky@hotmail.com" > </a></li>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/linkedin.png" alt="LinkedIn" data-toggle="tooltip" data-placement="right" title="LinkedIn"> </a> 
 </li>
-		<li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/facebook.png" alt="Facebook"> </a>
+		<li><a href="https://www.facebook.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/facebook.png" alt="Facebook" data-toggle="tooltip" data-placement="right" title="Facebook"> </a>
  </li>
-        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/twitter.png" alt="Twitter"> </a>
+        <li> <a href="https://twitter.com/VixDeschrijver" target="_blank"> <img id="contacticon" src="img/twitter.png" alt="Twitter" data-toggle="tooltip" data-placement="right" title="Twitter"> </a>
 </li>
-        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"> </a>
+        <li> <a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" target="_blank"> <img id="contacticon" src="img/instagram.png" alt="Instagram"  data-toggle="tooltip" data-placement="right" title="Instagram"> </a>
 </li>
-        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/pinterest.png" alt="Pinterest"> </a> </p>
+        <li> <a href="https://www.pinterest.com/itsallinthevix" target="_blank"> <img id="contacticon" src="img/pinterest.png" alt="Pinterest"  data-toggle="tooltip" data-placement="right" title="Pinterest"> </a> </p>
  </li>    
 	</ul>
 
+</aside>
+
+
+<footer id="footer">
+<div> 
+    <p> <strong> &copy; It's All in the Vix.!! </strong> </p>
+    <p id="contactme"> Contact Me <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" data-toggle="tooltip" data-placement="left" title="deschrijvervicky@hotmail.com" >  </a>  </p> 
+    
+    
+    
 </div>
-
-
-<footer>
-<p> Contact Me <a href="mailto:deschrijvervicky@hotmail.com" > <img id="contacticon" src="img/email.png" alt="Stuur een email" data-toggle="tooltip" data-placement="left" title="deschrijvervicky@hotmail.com" >  </a>  It's All in the Vix.!!</p>
 </footer>
 
 
 
-</div>
+
 
 
 
