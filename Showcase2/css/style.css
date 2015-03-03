@@ -44,8 +44,18 @@ strong {
     padding: 100px 0 260px 0;
     background-size: cover;
 }
+
+.slideA{
+    background:url('../img/logoik.gif') 50% 0 no-repeat fixed;
+	background-color:#fff;
+    color: #fff;
+    height: 300px;
+    margin: 0;
+    padding: 100px 0 260px 0;
+    
+}
  
-.slide2, .slide4, .slide6{
+.slide2, .slide4, .slide6, .slideB{
     background-color: #fff;
     color: #333333;
     height: auto;
