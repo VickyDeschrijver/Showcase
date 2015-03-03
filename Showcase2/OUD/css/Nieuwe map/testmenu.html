@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="testmenu.css"/>
+<title>Naamloos document</title>
+</head>
+
+<body>
+
+<nav>
+  <div class="navToggle">
+    <div class="icon"></div>
+  </div>
+  
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+<script>
+$(".navToggle").click (function(){
+  $(this).toggleClass("open");
+  $("nav").toggleClass("open");
+});
+</script>
+
+</body>
+</html>
